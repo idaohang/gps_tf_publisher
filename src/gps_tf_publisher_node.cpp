@@ -4,6 +4,7 @@
 #include <std_msgs/Bool.h>
 #include <tf/transform_broadcaster.h>
 #include "sensor_msgs/Imu.h"
+#include <nav_msgs/Odometry.h>
 
 
 

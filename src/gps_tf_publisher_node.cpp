@@ -23,6 +23,8 @@ void Callback(const nav_msgs::OdometryConstPtr& msg)
   static tf::TransformBroadcaster br;
   tf::Transform transform;
   transform.setOrigin( tf::Vector3(msg->pose.pose.position.x, msg->pose.pose.position.y, 0.0) );
+  //if(name_space=="/current_goal")
+  //ROS_ERROR("%f %f",msg->pose.pose.position.x, msg->pose.pose.position.y);
   tf::Quaternion quat;
   tf::quaternionMsgToTF(imu_msg, quat);
   // the tf::Quaternion has a method to acess roll pitch and yaw
